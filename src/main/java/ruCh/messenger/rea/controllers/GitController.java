@@ -18,6 +18,6 @@ public class GitController {
     public OutputMessage changeText(@RequestBody InputMessage msg) {
 
 
-        return new OutputMessage(msg.getFrom(), msg.getText(), new Date().toString());
+        return new OutputMessage(msg.getFrom(), msg.getText() + " - this is response!", new Date().toString());
     }
 }
